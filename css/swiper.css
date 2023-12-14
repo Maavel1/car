@@ -1,0 +1,36 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 104px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 335px;
+    height: 300px;
+    position: relative;
+    border-radius: 19px;
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.17) -15.73%, rgba(255, 255, 255, 0.00) 104.81%);
+    backdrop-filter: blur(5px);
+    padding: 35px 10px 65px 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    transform: translateY(100deg);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    top: 136px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+
+  .swiper-pagination-bullet {
+    background:rgb(255 255 255);
+  }

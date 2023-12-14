@@ -1,0 +1,790 @@
+/* Service */ 
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background: #030202;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .popup p {
+    color: #000000;
+    font-family: SF Pro Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: black;
+  }
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url('../fonts/SF-Pro-Display-Medium.otf');
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+/* header */ 
+
+.header {
+    height: 80px;
+}
+
+.inner_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_and_email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo_and_email a{
+    color: #FFF;
+    font-family: SF;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact a:first-child{
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact a:last-child {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* MAIN */
+
+.main {
+    background-image: url('../img/bg_main_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner_main_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_main_title p{
+    margin: 0;
+}
+
+.one_text_title {
+    display: flex;
+    align-items: center;
+    height: 71px;
+    gap: 5px;
+}
+
+.text_main_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.title_text {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 95.316px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.garant_text {
+    color: #FFF;
+    text-align: right;
+    font-family: SF Pro Display;
+    font-size: 31.081px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.servis_title {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 95.316px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.rep {
+    color: #FFF;
+    text-align: right;
+    font-family: SF Pro Display;
+    font-size: 34.775px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form_main {
+    background-image: url('../img/generic-brandless-modern-sport-car-with-fire-smoke\ \(1\)\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.title_discont {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 35.272px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inner_form_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 335px;
+}
+
+.discont {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.discont p:first-child {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 28.272px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(271deg);
+}
+.discont p:last-child {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 80.125px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.diller_discont {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 19.379px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form {
+    background-image: url('../img/bg_form.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 23px 43px;
+    border-radius: 15px;
+    backdrop-filter: blur(5.5px);
+    border-right: red solid 15px ;
+}
+
+.title_form {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 23.922px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_form input {
+    border-radius: 12px;
+    background: #131313;
+    color: #CDCDCD;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 14px 0px 14px 23px;
+    text-align: left;
+}
+
+.form_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form {
+    background: #900000;
+    padding: 14px 35px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+
+/* STATISK */
+
+.statisk {
+    background-image: url(../img/infrared-lamps-drying-car-body-parts-after-applying-save-gloss-coating\ 1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.statick_numbers {
+    padding-top: 97px;
+    padding-bottom: 85px;
+}
+
+.inner_statick_number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.numbers_statick {
+    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.decr_statisck {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 22.379px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inner_info_company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.decr_info_company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+}
+
+.decr_info_company p:first-child {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 35.272px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.decr_info_company p:last-child {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* SERVICES */ 
+
+.services {
+    background-image: url(../img/new-tires-car-tires-close-up\ 1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.text_services {
+    position: relative;
+}
+
+.title_services {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+}
+
+.decr_services {
+    color: #CDCDCD;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+
+.inner_slide {
+    width: 335px;
+    text-align: center;
+}
+
+.title_slide {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 27px;
+}
+
+.decr_slide {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price p {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.price_title {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.price_slide {
+    margin-bottom: 22px;
+}
+
+
+/* price_ PHOTO */ 
+
+.price_photo {
+    background: rgba(241, 3, 3, 0.425);
+    background-image: url('../img/bg_form_2.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    height: 100%;
+}
+
+.inner_price_photo {
+    background-image: url('../img/Ellipse25.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.title_fomr_price {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.decr_price_form {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.tel_photo_form {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.form_price_photo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.form_price_photo input {
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: linear-gradient(95deg, rgba(255, 255, 255, 0.01) 7.75%, rgba(255, 255, 255, 0.00) 147.28%);
+    backdrop-filter: blur(2.5px);
+    color: #ffffff;
+    text-align: left;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px 10px 14px 10px;
+    width: 432px;
+}
+.in-put::placeholder {color: #ffffff;}
+
+/* WebKit, Edge
+   ----------------------------  */
+.in-put::-webkit-input-placeholder {color: #ffffff;}
+
+/* Edge
+   ----------------------------  */
+.in-put::-ms-input-placeholder {color: #000000;}
+
+/* Firefox 4-18
+   ----------------------------  */
+.in-put:-moz-placeholder {color: rgb(255, 255, 255);opacity: 1;}
+
+/* Firefox 19+
+   ----------------------------  */
+.in-put::-moz-placeholder {color: #ffffff;opacity: 1;}
+
+/* IE 10-11
+   ----------------------------  */
+.in-put:-ms-input-placeholder {color: #ffffff;}
+
+.btn_form_phot {
+    display: flex;
+    gap:70px;
+}
+
+.photo_price_photo {
+    position: relative;
+    bottom: -8px;
+}
+
+
+/* works */ 
+
+.works {
+    height: 1000px;
+    background-image: url('../img/bg_works.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.bg_works_r {
+    background-image: url('../img/smoke_works.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.title_works_rows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.title_works {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.decr {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.social_works {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social_img {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.slide_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.social_works p {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.posle_works_img {
+    position: relative;
+    bottom: 178px;
+    left: 92px;
+}
+.text_info_works {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 150px;
+}
+
+.do_text {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 317px;
+    bottom: 50px;
+}
+
+.posle_text {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 169px;
+    bottom: 109px;
+}
+
+/* requst */ 
+
+.inner_requst {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 65px;
+}
+
+.requst {
+    background-image: url('../img/red-color-powder-explosion-black-background-red-dust-particles-splashing\ 1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.bg_requst {
+    background-image: url('../img/mechanic-holding-digital-tablet\ 1.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.title_requst {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 65px;
+    line-height: normal;
+    position: relative;
+    left: 195px;
+    margin-bottom: 35px
+}
+
+.form_requst_block {
+    position: relative;
+    left: 115px;
+}
+
+.margin {
+    margin-left: 100px;
+    position: relative;
+    right: -136px;
+}
+
+.form_works_requst {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 453px;
+    margin-top: 62px;
+}
+
+.form_works_requst input {
+    padding: 14px 14px 14px 14px;
+    border: 1.133px solid rgba(255, 255, 255, 0.49);
+    background: linear-gradient(95deg, rgba(255, 255, 255, 0.06) 7.75%, rgba(255, 255, 255, 0.00) 147.28%);
+    backdrop-filter: blur(2.8312501907348633px);
+    color: #ffffff;
+    text-align: left;
+    font-family: SF Pro Display;
+    font-size: 18.12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    left: 472px;
+}
+
+.s {
+    position: relative;
+    left: 472px;
+}
+
+
+/* FOOTER */ 
+
+.footer {
+    margin-top: 164px;
+    background-image: url('../img/bg_footer\ \(2\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+.inner_footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title_footer,.tel_footer {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.aderes {
+    color: #FFF;
+    text-align: center;
+    font-family: Golos;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
